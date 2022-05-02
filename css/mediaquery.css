@@ -1,0 +1,31 @@
+@media screen and (max-width:1200px){
+    .container{
+        width: 748px;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    .container{
+        width: 405px;
+    }
+
+    .row-md-large{
+        flex-direction: column;
+    }
+
+    .col-md-medium{
+        flex-basis: calc((100% / 2 ) - 1rem);
+    }
+
+}
+
+@media screen and (max-width: 425px){
+    .container{
+        width: 100%;
+    }
+
+    .col-sl-large{
+        flex-basis: 100%;
+    }
+}

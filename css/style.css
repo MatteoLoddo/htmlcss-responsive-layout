@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h4,h3{
+    text-align: center;
+}
+p{
+    padding-top: 1rem;
+}
+
+/* ***********************************************
+VARIABILES
+ *************************************************/
+:root{
+    --color-first: #9792E4;
+    --color-second:#0084FD;
+    --colore-second-light:#B5DDFF;
+}
+/******************************************
+LAYOUT CLASS
+******************************************* */
+
+.section{
+    padding: 1rem;
+}
+
+.container{
+    width: 960px;
+    margin: auto;
+    /* solo per debug */
+    border: 1px dashed black;
+    padding: 1rem 0rem;
+}
+
+.row{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+
+.col{
+    flex-basis: 0;
+    flex-shrink: 0;
+    /* solo per debug */
+}
+
+.col-1{
+    flex-basis: calc((100% / 3) - 1rem);
+    flex-grow: 1;
+    /* solo per debug */
+}
+
+.col-2{
+    flex-basis: calc((100% / 3) *2 - 0.3rem);
+    flex-grow: 1;
+}
+
+.col-half{
+    flex-basis: calc((100% / 2) - 1rem);
+}
+
+.items-baseline{
+    align-items: baseline;
+}
+
+.col-flex{
+    display: flex;
+}
+
+/* ********************************
+UTILITY CLASS
+*********************************** */
+.bg-first-color{
+    background-color: var(--color-first);
+}
+
+.bg-second-color{
+    background-color: var(--color-second);
+}
+
+.bg-second-color-light{
+    background-color: var(--colore-second-light);
+}
+
+.bg-color-none{
+    background-color:#fff;
+}
+
+.padding-card-little{
+    padding: 1rem;
+}
+.big-padding-l-r{
+    padding: 0rem 3rem;
+
+}
+.no-padding-bottom{
+    padding-bottom: 0;
+}
+
+.border-radius{
+    border-radius: 20px;
+}
+
+/* *******************************************************
+********************************************************** */
+
+
+
+.col-half.position img{
+    position: relative;
+    bottom: -4px;
+    width: 100%;
+    
+}
+
+
+.col-int-right{
+    position: relative;
+    flex-basis: 50%;
+}
+
+.svg-container{
+    flex-basis: 0;
+    margin: auto;
+    width: 50px;
+}
+
+
+.img-container{
+    margin: auto;
+}
+
+.img-container img{
+    width: 100%;
+}
+
+.img-testimonial{
+    width: 20%;
+}
+
+.img-testimonial img{
+    width: 100%;
+}
+
+.text-testimonial{
+    flex-basis: calc(80% -  1rem);
+}
+
+.text-testimonial svg{
+    display: inline-block;
+    width: 1rem;
+}
+
+
+
+
