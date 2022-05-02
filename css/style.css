@@ -10,6 +10,24 @@ p{
     padding-top: 1rem;
 }
 
+a{
+    display: inline-block;
+    color: #fff;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    z-index: 999;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
 /* ***********************************************
 VARIABILES
  *************************************************/
@@ -17,6 +35,7 @@ VARIABILES
     --color-first: #9792E4;
     --color-second:#0084FD;
     --colore-second-light:#B5DDFF;
+    --color-white:#fff
 }
 /******************************************
 LAYOUT CLASS
@@ -44,7 +63,6 @@ LAYOUT CLASS
 
 .col{
     flex-basis: 0;
-    flex-shrink: 0;
     /* solo per debug */
 }
 
@@ -93,8 +111,8 @@ UTILITY CLASS
 .padding-card-little{
     padding: 1rem;
 }
-.big-padding-l-r{
-    padding: 0rem 3rem;
+.padding-min{
+    padding: 0.5rem;
 
 }
 .no-padding-bottom{
@@ -107,8 +125,29 @@ UTILITY CLASS
 
 /* *******************************************************
 ********************************************************** */
+nav .container{
+    justify-content: space-between;
+}
 
+.hamburger-svg{
+    display: none;
+    color: var(--color-white);
+    width:  30px;
 
+}
+
+.col-menu .bt a{
+    color: black;
+}
+
+.bt{
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.section.application-card{
+    padding-top: 7rem;
+}
 
 .col-half.position img{
     position: relative;
@@ -124,9 +163,15 @@ UTILITY CLASS
 }
 
 .svg-container{
-    flex-basis: 0;
+    color: #0084FD;
     margin: auto;
     width: 50px;
+    padding-bottom: 0.5rem;
+}
+
+.svg-container svg{
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -139,21 +184,57 @@ UTILITY CLASS
 }
 
 .img-testimonial{
-    width: 20%;
+    width: 150px;
+    height: 150px;
 }
 
 .img-testimonial img{
-    width: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+
 }
 
 .text-testimonial{
-    flex-basis: calc(80% -  1rem);
+    padding: 1rem;
+    flex-basis: calc(100% - 150px);
 }
 
 .text-testimonial svg{
     display: inline-block;
     width: 1rem;
 }
+
+.container-testimonial .col-1{
+    background-color: var(--color-first);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.benefit-working .col-1{
+    background-color: var(--color-white);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.card h4{
+    color: var(--color-second);
+}
+
+.card-number h1{
+    color: var(--color-first);
+    text-align: left;
+    font-size: 3rem;
+}
+
+.card-number h4{
+    color: var(--color-first);
+    text-align: left;
+}
+
+
+
 
 
 

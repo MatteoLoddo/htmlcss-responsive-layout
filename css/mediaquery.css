@@ -1,13 +1,33 @@
-@media screen and (max-width:1200px){
+@media screen and (max-width:1440px){
     .container{
-        width: 748px;
+        width: 940px;
     }
+}
+
+
+@media screen and (max-width:990px){
+    .container{
+        width: 738px;
+    }
+
+    .col-menu{
+        display: none;
+    }
+
+    .hamburger-svg{
+        display: block;
+    }
+
     
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:780px){
     .container{
-        width: 405px;
+        width: 420px;
+    }
+
+    .no-display-flex-med-size{
+        display: block;
     }
 
     .row-md-large{
@@ -18,9 +38,10 @@
         flex-basis: calc((100% / 2 ) - 1rem);
     }
 
+
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 460px){
     .container{
         width: 100%;
     }
@@ -28,4 +49,6 @@
     .col-sl-large{
         flex-basis: 100%;
     }
+
+
 }
