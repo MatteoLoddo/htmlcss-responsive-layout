@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Open Sans' , sans-serif;
+}
 h1,h4,h3{
     text-align: center;
 }
@@ -49,7 +52,7 @@ LAYOUT CLASS
     width: 960px;
     margin: auto;
     /* solo per debug */
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
     padding: 1rem 0rem;
 }
 
@@ -81,13 +84,11 @@ LAYOUT CLASS
     flex-basis: calc((100% / 2) - 1rem);
 }
 
-.items-baseline{
-    align-items: baseline;
+.bt{
+    background-color: #fff;
+    border-radius: 20px;
 }
 
-.col-flex{
-    display: flex;
-}
 
 /* ********************************
 UTILITY CLASS
@@ -123,6 +124,15 @@ UTILITY CLASS
     border-radius: 20px;
 }
 
+.items-baseline{
+    align-items: baseline;
+}
+
+.col-flex{
+    display: flex;
+}
+
+
 /* *******************************************************
 ********************************************************** */
 nav .container{
@@ -140,10 +150,6 @@ nav .container{
     color: black;
 }
 
-.bt{
-    background-color: #fff;
-    border-radius: 20px;
-}
 
 .section.application-card{
     padding-top: 7rem;
